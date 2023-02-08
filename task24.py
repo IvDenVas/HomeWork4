@@ -21,12 +21,12 @@ for i in range(n):
 
 max = 0
 
-for i in range(1, len(lst) - 1):
+for i in range(len(lst) - 2):
     if i < len(lst) - 2:
         if max < lst[i + 1] + lst[i] + lst[i + 2]:
             max = lst[i + 1] + lst[i] + lst[i + 2]
     else:
-        if max < lst[i + 1] + lst[i] + lst[0]:
-            max = lst[i + 1] + lst[i] + lst[0]
+        if max < lst[i + 1] + lst[i + 2] + lst[0]:
+            max = lst[i + 1] + lst[i + 2] + lst[0]
 print(max)
  
